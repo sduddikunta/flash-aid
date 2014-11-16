@@ -1,0 +1,191 @@
+<!--
+  ~ This file is part of Flash Aid.
+  ~ Copyright (C) 2014 Siddharth Duddikunta, Steven Zhang, William Yang, Zain Rehmani
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/keyline">
+
+            <TextView
+                android:id="@+id/profile_complete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/profile_label"
+                android:textSize="@dimen/header_text_size" />
+
+            <TextView
+                android:id="@+id/responder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline"
+                android:text="@string/responder"
+                android:textSize="@dimen/primary_text_size" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/radio_no"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/keyline"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/checkboxen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/keyline_minus_8dp"
+                    android:text="@string/assist_others"
+                    android:textSize="@dimen/primary_text_size" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cpr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/keyline_minus_8dp"
+                    android:paddingRight="@dimen/keyline_minus_8dp"
+                    android:text="@string/cpr" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_aed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aed" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_epipen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/epipen" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/person_one"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline"
+                android:text="@string/person_one"
+                android:textSize="@dimen/primary_text_size" />
+
+
+            <EditText
+                android:id="@+id/person_one_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_minus_8dp"
+                android:hint="@string/person_one_name"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/person_one_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_minus_8dp"
+                android:hint="@string/person_one_number"
+                android:lines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline"
+                android:text="@string/person_two"
+                android:textSize="@dimen/primary_text_size" />
+
+            <EditText
+                android:id="@+id/person_two_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_minus_8dp"
+                android:hint="@string/person_two_name"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/person_two_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline_minus_8dp"
+                android:hint="@string/person_two_number"
+                android:lines="1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/keyline">
+
+                <Button
+                    android:id="@+id/done_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="2dp"
+                    android:text="@string/done"
+                    android:textColor="#fff" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+Brlapi==0.6.2
+Cython==0.21.1
+PyYAML==3.11
+ipython==2.3.0
+louis==2.5.2
+lxml==3.4.0
+namcap==3.2.5
+pyalpm==0.6.2
+pyelftools==0.23
+pygobject==3.14.0
+pyxdg==0.25
+team==1.0
+virtualenv==1.11.6

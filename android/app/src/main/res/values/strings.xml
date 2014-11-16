@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Flash Aid.
+  ~ Copyright (C) 2014 Siddharth Duddikunta, Steven Zhang, William Yang, Zain Rehmani
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <string name="app_name">Flash Aid</string>
+    <string name="title_activity_signup">Flash Aid Setup</string>
+    <string name="title_complete_profile">Flash Aid Setup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_label">Complete your profile!</string>
+    <string name="welcome_label">Welcome!</string>
+    <string name="welcome_register_text">Please complete your registration information below.</string>
+    <string name="call_for_help">CALL FOR HELP</string>
+    <string name="welcome_screen_text">If you require assistance, touch CALL FOR HELP below.</string>
+    <string name="what_is_emergency_label">What is your emergency?</string>
+    <string name="emergency_text">Please select from the choices below. If you cannot respond,
+    do nothing.</string>
+    <string name="time_left">If you do not respond in the next %d seconds, a call for help will be sent.</string>
+    <string name="emergency_type_general">General/Other/Not Sure</string>
+    <string name="emergency_type_cpr">No breathing/heartbeat (CPR/AED)</string>
+    <string name="emergency_type_epipen">Severe allergic reaction (EpiPen)</string>
+    <string name="send_call">Send Call</string>
+    <string name="responder">Will you be able to be a responder that can assist others in case of emergency?</string>
+    <string name="name">Name</string>
+    <string name="email">Email address</string>
+    <string name="phone">Phone number</string>
+    <string name="register">Register</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cpr">CPR Certified</string>
+    <string name="aed">AED Owner</string>
+    <string name="epipen">Prescription EpiPen Owner</string>
+    <string name="other_aid">Other (Please specify)</string>
+    <string name="emergency_contact_information">Emergency Contact Information</string>
+    <string name="person_one">First Emergency Contact Information</string>
+    <string name="person_one_name">Name</string>
+    <string name="person_one_number">Phone number</string>
+    <string name="person_two">Second Emergency Contact Information</string>
+    <string name="person_two_name">Name</string>
+    <string name="person_two_number">Phone number</string>
+    <string name="done">Done</string>
+    <string name="assist_others">How will you be able to assist others?</string>
+    <string name="name_empty">Name cannot be blank.</string>
+    <string name="email_invalid">Please enter a valid email.</string>
+    <string name="phone_invalid">Please enter a valid phone number.</string>
+    <string name="title_activity_alert">AlertActivity</string>
+    <string name="emergency_notification">MEDICAL EMERGENCY ALERT</string>
+    <string name="distance_from_you">%d feet from you</string>
+
+</resources>
